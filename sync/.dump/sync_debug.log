@@ -258,3 +258,13 @@ Patch generated at C:\INGRED-merge-test-Dev1\sync\.dump\IMPORT.xml
 [2026-07-06 11:13:04] Removed 139 previously managed view files.
 [2026-07-06 11:13:07] Export to XML folder complete.
 
+[2026-07-06 11:15:20] Exporting snapshot to: C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml
+
+[2026-07-06 11:15:21] command=export
+[2026-07-06 11:15:21] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py export --project-root C:\INGRED-merge-test-Dev1\sync --snapshot C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Dev1\sync\project-view
+
+[2026-07-06 11:15:27] returncode=0
+[2026-07-06 11:15:22] Exporting from snapshot C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml to view root C:\INGRED-merge-test-Dev1\sync\project-view
+[2026-07-06 11:15:25] Removed 139 previously managed view files.
+[2026-07-06 11:15:27] Export to XML folder complete.
+
