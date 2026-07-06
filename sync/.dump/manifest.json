@@ -1,5 +1,5 @@
 {
-  "created": "2026-07-06T10:31:36",
+  "created": "2026-07-06T11:24:37",
   "view_root": "project-view",
   "ns": "",
   "entries": [
@@ -239,7 +239,7 @@
         "Method": "IArchivable"
       },
       "xml_path": "Device\\Plc Logic\\Application\\PLC_PRG.xml",
-      "hash": "fb4f93d7b590efb9fb69bed2567055f598f216b3"
+      "hash": "ba6651f8374744853b26cffaa095cb5a4618ce67"
     },
     {
       "guid": "051d5c1f-e935-4a8b-aa36-cd332c3d6f24",
