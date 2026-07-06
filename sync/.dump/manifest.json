@@ -1,5 +1,5 @@
 {
-  "created": "2026-07-06T09:42:11",
+  "created": "2026-07-06T09:57:51",
   "view_root": "project-view",
   "ns": "",
   "entries": [
@@ -324,6 +324,20 @@
       },
       "xml_path": "Device\\Plc Logic\\Application\\sync_data_test.xml",
       "hash": "e474acf0a10d434f7b1bc50bbd22532e208ca0c6"
+    },
+    {
+      "guid": "356fda1a-a1b5-49a0-9a0a-d3bb7d9efb80",
+      "name": "POU_new",
+      "type_guid": "6f9dac99-8de1-4efc-8465-68ac443b7d08",
+      "parent_guid": "458bb7ba-09b4-4dfc-aa95-620a073fdede",
+      "structured_view_guid": "{d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84}",
+      "structured_view_single_attrs": {
+        "{http://www.w3.org/XML/1998/namespace}space": "preserve",
+        "Type": "{3daac5e4-660e-42e4-9cea-3711b98bfb63}",
+        "Method": "IArchivable"
+      },
+      "xml_path": "Device\\Plc Logic\\Application\\POU_new.xml",
+      "hash": "c0363fce2c7d60927eb40950bb088a135b9ba1b7"
     },
     {
       "guid": "1dd96c66-82c2-4671-94f3-002fc80775ee",
