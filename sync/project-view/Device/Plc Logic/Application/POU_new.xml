@@ -11,7 +11,7 @@
           <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
           <Single Type="System.Guid">25e509de-33d4-4447-93f8-c9e4ea381c8b</Single>
         </Array>
-        <Single Name="Timestamp" Type="long">639189286440143324</Single>
+        <Single Name="Timestamp" Type="long">639189323931800510</Single>
       </Single>
       <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
         <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
@@ -121,8 +121,8 @@
                           <List2 Name="InputItems">
                             <Single Type="{9de7f100-1b87-424c-a62e-45b0cfc85ed2}" Method="IArchivable">
                               <Single Name="Operand" Type="{c9b2f165-48a2-4a45-8326-3952d8a3d708}" Method="IArchivable">
-                                <Single Name="Operand" Type="string">???</Single>
-                                <Null Name="Type" />
+                                <Single Name="Operand" Type="string">pIoConfigTaskMap^.pConnectorMapList^.dwIoMgrSpecific</Single>
+                                <Single Name="Type" Type="string">XWORD</Single>
                                 <Single Name="Comment" Type="string" />
                                 <Single Name="SymbolComment" Type="string" />
                                 <Single Name="Address" Type="string" />
@@ -140,8 +140,8 @@
                             </Single>
                             <Single Type="{9de7f100-1b87-424c-a62e-45b0cfc85ed2}" Method="IArchivable">
                               <Single Name="Operand" Type="{c9b2f165-48a2-4a45-8326-3952d8a3d708}" Method="IArchivable">
-                                <Single Name="Operand" Type="string">???</Single>
-                                <Null Name="Type" />
+                                <Single Name="Operand" Type="string">SysInfoLibraryTMK.elsyinfotype.AppChecksum</Single>
+                                <Single Name="Type" Type="string">ELSYINFOTYPE</Single>
                                 <Single Name="Comment" Type="string" />
                                 <Single Name="SymbolComment" Type="string" />
                                 <Single Name="Address" Type="string" />
@@ -180,8 +180,8 @@
                         </Single>
                         <Single Type="{9de7f100-1b87-424c-a62e-45b0cfc85ed2}" Method="IArchivable">
                           <Single Name="Operand" Type="{c9b2f165-48a2-4a45-8326-3952d8a3d708}" Method="IArchivable">
-                            <Single Name="Operand" Type="string">???</Single>
-                            <Null Name="Type" />
+                            <Single Name="Operand" Type="string">ElesyRedundancy.RDERROR.RUN_HWSWITCH_ERROR</Single>
+                            <Single Name="Type" Type="string">RDERROR</Single>
                             <Single Name="Comment" Type="string" />
                             <Single Name="SymbolComment" Type="string" />
                             <Single Name="Address" Type="string" />
@@ -220,8 +220,8 @@
                     </Single>
                     <Single Type="{9de7f100-1b87-424c-a62e-45b0cfc85ed2}" Method="IArchivable">
                       <Single Name="Operand" Type="{c9b2f165-48a2-4a45-8326-3952d8a3d708}" Method="IArchivable">
-                        <Single Name="Operand" Type="string">???</Single>
-                        <Null Name="Type" />
+                        <Single Name="Operand" Type="string">ElesyRedundancy.RDERROR.RUN_MAINCTX_OVERSIZE_ERROR</Single>
+                        <Single Name="Type" Type="string">RDERROR</Single>
                         <Single Name="Comment" Type="string" />
                         <Single Name="SymbolComment" Type="string" />
                         <Single Name="Address" Type="string" />
@@ -239,8 +239,8 @@
                     </Single>
                     <Single Type="{9de7f100-1b87-424c-a62e-45b0cfc85ed2}" Method="IArchivable">
                       <Single Name="Operand" Type="{c9b2f165-48a2-4a45-8326-3952d8a3d708}" Method="IArchivable">
-                        <Single Name="Operand" Type="string">???</Single>
-                        <Null Name="Type" />
+                        <Single Name="Operand" Type="string">ElesyRedundancy.RDERROR.RUN_RESCTX_OVERCNT_ERROR</Single>
+                        <Single Name="Type" Type="string">RDERROR</Single>
                         <Single Name="Comment" Type="string" />
                         <Single Name="SymbolComment" Type="string" />
                         <Single Name="Address" Type="string" />
