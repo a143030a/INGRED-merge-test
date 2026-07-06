@@ -1,83 +1,10 @@
-[2026-07-06 09:42:04] Exporting snapshot to: C:\INGRED-merge-test-Server\sync\.dump\IDE.xml
+[2026-07-06 11:49:20] Exporting snapshot to: C:\INGRED-merge-test-Server\sync\.dump\IDE.xml
 
-[2026-07-06 09:42:06] command=export
-[2026-07-06 09:42:06] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py export --project-root C:\INGRED-merge-test-Server\sync --snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Server\sync\project-view
+[2026-07-06 11:49:21] command=import
+[2026-07-06 11:49:21] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py import --project-root C:\INGRED-merge-test-Server\sync --snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Server\sync\project-view --patch C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
 
-[2026-07-06 09:42:11] returncode=0
-[2026-07-06 09:42:07] Exporting from snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml to view root C:\INGRED-merge-test-Server\sync\project-view
-[2026-07-06 09:42:11] Export to XML folder complete.
-
-<<<<<<< HEAD
-[2026-07-06 09:57:37] Exporting snapshot to: C:\INGRED-merge-test-Server\sync\.dump\IDE.xml
-
-[2026-07-06 09:57:38] command=export
-[2026-07-06 09:57:38] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py export --project-root C:\INGRED-merge-test-Server\sync --snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Server\sync\project-view
-
-[2026-07-06 09:57:51] returncode=0
-[2026-07-06 09:57:39] Exporting from snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml to view root C:\INGRED-merge-test-Server\sync\project-view
-[2026-07-06 09:57:48] Removed 138 previously managed view files.
-[2026-07-06 09:57:51] Export to XML folder complete.
-=======
-[2026-07-06 09:52:45] Exporting snapshot to: C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml
-
-[2026-07-06 09:52:47] command=export
-[2026-07-06 09:52:47] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py export --project-root C:\INGRED-merge-test-Dev1\sync --snapshot C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Dev1\sync\project-view
-
-[2026-07-06 09:52:52] returncode=0
-[2026-07-06 09:52:47] Exporting from snapshot C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml to view root C:\INGRED-merge-test-Dev1\sync\project-view
-[2026-07-06 09:52:50] Removed 138 previously managed view files.
-[2026-07-06 09:52:52] Export to XML folder complete.
->>>>>>> 69f73fbe7c9e0c114314124d165c1ed6face913c
-
-[2026-07-06 10:18:49] Exporting snapshot to: C:\INGRED-merge-test-Server\sync\.dump\IDE.current.xml
-
-[2026-07-06 10:18:51] command=compare
-[2026-07-06 10:18:51] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py compare --project-root C:\INGRED-merge-test-Server\sync --snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.current.xml --view-root C:\INGRED-merge-test-Server\sync\project-view --report C:\INGRED-merge-test-Server\sync\.dump\compare_report.json --include-objects
-
-[2026-07-06 10:18:54] returncode=1
-[2026-07-06 10:18:51] Comparing snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.current.xml with view root C:\INGRED-merge-test-Server\sync\project-view
-
-[stderr]
-Traceback (most recent call last):
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 368, in <module>
-    main()
-    ~~~~^^
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 358, in main
-    run_compare(args)
-    ~~~~~~~~~~~^^^^^^
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 224, in run_compare
-    diff_result, ide_model, folder_model, _ = _load_diff(args, "comparison")
-                                              ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 109, in _load_diff
-    ide_model, folder_model, dump_path = _load_models(args, context)
-                                         ~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 93, in _load_models
-    folder_model = folder_reader.read()
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\folder_reader.py", line 356, in read
-    manifest = json.load(f)
-  File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py", line 298, in load
-    return loads(fp.read(),
-        cls=cls, object_hook=object_hook,
-        parse_float=parse_float, parse_int=parse_int,
-        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
-  File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py", line 352, in loads
-    return _default_decoder.decode(s)
-           ~~~~~~~~~~~~~~~~~~~~~~~^^^
-  File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py", line 345, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py", line 361, in raw_decode
-    obj, end = self.scan_once(s, idx)
-               ~~~~~~~~~~~~~~^^^^^^^^
-json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)
-
-[2026-07-06 10:19:11] Exporting snapshot to: C:\INGRED-merge-test-Server\sync\.dump\IDE.xml
-
-[2026-07-06 10:19:12] command=import
-[2026-07-06 10:19:12] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py import --project-root C:\INGRED-merge-test-Server\sync --snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Server\sync\project-view --patch C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
-
-[2026-07-06 10:19:15] returncode=1
-[2026-07-06 10:19:12] Importing view root C:\INGRED-merge-test-Server\sync\project-view against snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml to generate C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
+[2026-07-06 11:49:24] returncode=1
+[2026-07-06 11:49:21] Importing view root C:\INGRED-merge-test-Server\sync\project-view against snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml to generate C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
 
 [stderr]
 Traceback (most recent call last):
@@ -111,160 +38,21 @@ Traceback (most recent call last):
   File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py", line 361, in raw_decode
     obj, end = self.scan_once(s, idx)
                ~~~~~~~~~~~~~~^^^^^^^^
-json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 242 column 1 (char 10469)
 
-[2026-07-06 10:21:00] Exporting snapshot to: C:\INGRED-merge-test-Server\sync\.dump\IDE.xml
+[2026-07-06 11:51:29] Exporting snapshot to: C:\INGRED-merge-test-Server\sync\.dump\IDE.xml
 
-[2026-07-06 10:21:01] command=import
-[2026-07-06 10:21:01] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py import --project-root C:\INGRED-merge-test-Server\sync --snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Server\sync\project-view --patch C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
+[2026-07-06 11:51:30] command=import
+[2026-07-06 11:51:30] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py import --project-root C:\INGRED-merge-test-Server\sync --snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Server\sync\project-view --patch C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
 
-[2026-07-06 10:21:04] returncode=1
-[2026-07-06 10:21:02] Importing view root C:\INGRED-merge-test-Server\sync\project-view against snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml to generate C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
-
-[stderr]
-Traceback (most recent call last):
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 368, in <module>
-    main()
-    ~~~~^^
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 360, in main
-    run_import(args)
-    ~~~~~~~~~~^^^^^^
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 247, in run_import
-    diff_result, ide_model, folder_model, _ = _load_diff(args, "import")
-                                              ~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 109, in _load_diff
-    ide_model, folder_model, dump_path = _load_models(args, context)
-                                         ~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 93, in _load_models
-    folder_model = folder_reader.read()
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\folder_reader.py", line 356, in read
-    manifest = json.load(f)
-  File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py", line 298, in load
-    return loads(fp.read(),
-        cls=cls, object_hook=object_hook,
-        parse_float=parse_float, parse_int=parse_int,
-        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
-  File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py", line 352, in loads
-    return _default_decoder.decode(s)
-           ~~~~~~~~~~~~~~~~~~~~~~~^^^
-  File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py", line 345, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py", line 361, in raw_decode
-    obj, end = self.scan_once(s, idx)
-               ~~~~~~~~~~~~~~^^^^^^^^
-json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)
-
-[2026-07-06 10:23:32] Exporting snapshot to: C:\INGRED-merge-test-Server\sync\.dump\IDE.xml
-
-[2026-07-06 10:23:34] command=import
-[2026-07-06 10:23:34] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py import --project-root C:\INGRED-merge-test-Server\sync --snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Server\sync\project-view --patch C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
-
-[2026-07-06 10:23:37] returncode=1
-[2026-07-06 10:23:34] Importing view root C:\INGRED-merge-test-Server\sync\project-view against snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml to generate C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
-
-[stderr]
-Traceback (most recent call last):
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 368, in <module>
-    main()
-    ~~~~^^
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 360, in main
-    run_import(args)
-    ~~~~~~~~~~^^^^^^
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 247, in run_import
-    diff_result, ide_model, folder_model, _ = _load_diff(args, "import")
-                                              ~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 109, in _load_diff
-    ide_model, folder_model, dump_path = _load_models(args, context)
-                                         ~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py", line 93, in _load_models
-    folder_model = folder_reader.read()
-  File "C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\folder_reader.py", line 356, in read
-    manifest = json.load(f)
-  File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py", line 298, in load
-    return loads(fp.read(),
-        cls=cls, object_hook=object_hook,
-        parse_float=parse_float, parse_int=parse_int,
-        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
-  File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py", line 352, in loads
-    return _default_decoder.decode(s)
-           ~~~~~~~~~~~~~~~~~~~~~~~^^^
-  File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py", line 345, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\aleaa\AppData\Local\Programs\Python\Python314\Lib\json\decoder.py", line 361, in raw_decode
-    obj, end = self.scan_once(s, idx)
-               ~~~~~~~~~~~~~~^^^^^^^^
-json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)
-
-[2026-07-06 10:30:43] Exporting snapshot to: C:\INGRED-merge-test-Server\sync\.dump\IDE.xml
-
-[2026-07-06 10:30:44] command=import
-[2026-07-06 10:30:44] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py import --project-root C:\INGRED-merge-test-Server\sync --snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Server\sync\project-view --patch C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
-
-[2026-07-06 10:30:55] returncode=0
-[2026-07-06 10:30:45] Importing view root C:\INGRED-merge-test-Server\sync\project-view against snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml to generate C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
-[2026-07-06 10:30:55] Compare model sizes: ide=139, disk=139
-[2026-07-06 10:30:55] Compare summary: modified=2, added=0, deleted=0, unchanged=137, projection_conflicts=0, unsupported_projection_changes=0
-[2026-07-06 10:30:55] modified: Project Information [11c0fc3a-9bcf-4dd8-ac38-efb93363e521] POUs\Project Information.xml (xml_changed=true)
-[2026-07-06 10:30:55] modified: PLC_PRG [70998732-af3a-4f96-92d1-a61e97ffdefb] Device\Plc Logic\Application\PLC_PRG.xml (xml_changed=true)
+[2026-07-06 11:51:41] returncode=0
+[2026-07-06 11:51:30] Importing view root C:\INGRED-merge-test-Server\sync\project-view against snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml to generate C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
+[2026-07-06 11:51:40] Compare model sizes: ide=139, disk=139
+[2026-07-06 11:51:40] Compare summary: modified=2, added=0, deleted=0, unchanged=137, projection_conflicts=0, unsupported_projection_changes=0
+[2026-07-06 11:51:40] modified: POU_new [356fda1a-a1b5-49a0-9a0a-d3bb7d9efb80] Device\Plc Logic\Application\POU_new.xml
+[2026-07-06 11:51:40] modified: Project Information [11c0fc3a-9bcf-4dd8-ac38-efb93363e521] POUs\Project Information.xml
 Building patch for 2 objects...
 Patch generated at C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
 
-[2026-07-06 10:30:55] Applying changes from C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
-
-[2026-07-06 10:31:29] Exporting snapshot to: C:\INGRED-merge-test-Server\sync\.dump\IDE.xml
-
-[2026-07-06 10:31:30] command=export
-[2026-07-06 10:31:30] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py export --project-root C:\INGRED-merge-test-Server\sync --snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Server\sync\project-view
-
-[2026-07-06 10:31:36] returncode=0
-[2026-07-06 10:31:31] Exporting from snapshot C:\INGRED-merge-test-Server\sync\.dump\IDE.xml to view root C:\INGRED-merge-test-Server\sync\project-view
-[2026-07-06 10:31:34] Removed 139 previously managed view files.
-[2026-07-06 10:31:36] Export to XML folder complete.
-
-[2026-07-06 10:37:08] Exporting snapshot to: C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml
-
-[2026-07-06 10:37:10] command=import
-[2026-07-06 10:37:10] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py import --project-root C:\INGRED-merge-test-Dev1\sync --snapshot C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Dev1\sync\project-view --patch C:\INGRED-merge-test-Dev1\sync\.dump\IMPORT.xml
-
-[2026-07-06 10:37:21] returncode=0
-[2026-07-06 10:37:11] Importing view root C:\INGRED-merge-test-Dev1\sync\project-view against snapshot C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml to generate C:\INGRED-merge-test-Dev1\sync\.dump\IMPORT.xml
-[2026-07-06 10:37:21] Compare model sizes: ide=138, disk=139
-[2026-07-06 10:37:21] Compare summary: modified=0, added=1, deleted=0, unchanged=138, projection_conflicts=0, unsupported_projection_changes=0
-[2026-07-06 10:37:21] added: POU_new [356fda1a-a1b5-49a0-9a0a-d3bb7d9efb80] Device\Plc Logic\Application\POU_new.xml (xml_changed=true)
-Building patch for 1 objects...
-Patch generated at C:\INGRED-merge-test-Dev1\sync\.dump\IMPORT.xml
-
-[2026-07-06 10:37:21] Applying changes from C:\INGRED-merge-test-Dev1\sync\.dump\IMPORT.xml
-
-[2026-07-06 11:00:27] Exporting snapshot to: C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml
-
-[2026-07-06 11:00:29] command=export
-[2026-07-06 11:00:29] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py export --project-root C:\INGRED-merge-test-Dev1\sync --snapshot C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Dev1\sync\project-view
-
-[2026-07-06 11:00:35] returncode=0
-[2026-07-06 11:00:29] Exporting from snapshot C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml to view root C:\INGRED-merge-test-Dev1\sync\project-view
-[2026-07-06 11:00:32] Removed 139 previously managed view files.
-[2026-07-06 11:00:35] Export to XML folder complete.
-
-[2026-07-06 11:12:59] Exporting snapshot to: C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml
-
-[2026-07-06 11:13:01] command=export
-[2026-07-06 11:13:01] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py export --project-root C:\INGRED-merge-test-Dev1\sync --snapshot C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Dev1\sync\project-view
-
-[2026-07-06 11:13:07] returncode=0
-[2026-07-06 11:13:01] Exporting from snapshot C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml to view root C:\INGRED-merge-test-Dev1\sync\project-view
-[2026-07-06 11:13:04] Removed 139 previously managed view files.
-[2026-07-06 11:13:07] Export to XML folder complete.
-
-[2026-07-06 11:15:20] Exporting snapshot to: C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml
-
-[2026-07-06 11:15:21] command=export
-[2026-07-06 11:15:21] args=python C:\Program Files\CODESYS 3.5.16.10\CODESYS\ScriptDir\cds-text-sync\cli\external_engine\engine_cli.py export --project-root C:\INGRED-merge-test-Dev1\sync --snapshot C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml --view-root C:\INGRED-merge-test-Dev1\sync\project-view
-
-[2026-07-06 11:15:27] returncode=0
-[2026-07-06 11:15:22] Exporting from snapshot C:\INGRED-merge-test-Dev1\sync\.dump\IDE.xml to view root C:\INGRED-merge-test-Dev1\sync\project-view
-[2026-07-06 11:15:25] Removed 139 previously managed view files.
-[2026-07-06 11:15:27] Export to XML folder complete.
+[2026-07-06 11:51:41] Applying changes from C:\INGRED-merge-test-Server\sync\.dump\IMPORT.xml
 
