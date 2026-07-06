@@ -1,5 +1,5 @@
 {
-  "created": "2026-07-06T09:42:11",
+  "created": "2026-07-06T09:52:52",
   "view_root": "project-view",
   "ns": "",
   "entries": [
@@ -71,7 +71,7 @@
         "Method": "IArchivable"
       },
       "xml_path": "POUs\\Project Information.xml",
-      "hash": "4672ce2d628d3f34ff81800817e09d051ee48561"
+      "hash": "52ef48896913d4774c7287e7def06326b8f6d5c2"
     },
     {
       "guid": "b9282e15-c5f9-4491-a1b5-b8f6b59b5723",
@@ -239,7 +239,7 @@
         "Method": "IArchivable"
       },
       "xml_path": "Device\\Plc Logic\\Application\\PLC_PRG.xml",
-      "hash": "a40f1c373e33fbf34f021eae4e51c6af51ae166e"
+      "hash": "213723f52a1315eb7d1e1e844e5a508ee738063a"
     },
     {
       "guid": "051d5c1f-e935-4a8b-aa36-cd332c3d6f24",
